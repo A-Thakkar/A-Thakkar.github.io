@@ -37,8 +37,6 @@ Work experience
 * **Officer Cadet**, Sep 2012 - Feb 2013
   * British Army, St Andrews, UK
 
-Skills
-======
 
 Publications
 ======
