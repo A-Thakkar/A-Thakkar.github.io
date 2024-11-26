@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * PhD in Chemistry, University of Bern, 2022
-* MChem in Chemistry, GitHub University, 2017
+* MChem in Chemistry, University of St Andrews, 2017
 
 Work experience
 ======
