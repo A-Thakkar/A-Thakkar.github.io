@@ -20,8 +20,7 @@ Education
 
 Work experience
 ======
-- **Research Staff Scientist**, Mar 2023 - Jun 2024
-- **Postdoctoral Research Scientist**, Mar 2022 - Mar 2023
+- **Research Staff Scientist**, Mar 2022 - Jun 2024
     - [IBM Research](https://research.ibm.com/labs/zurich), Zurich, Switzerland
     - [AI for Scientific Discovery](https://research.ibm.com/projects/ai-for-scientific-discovery)
 - **PhD Researcher**, Jan 2019 - Dec 2021
