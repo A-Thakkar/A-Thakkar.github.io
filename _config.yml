@@ -27,7 +27,7 @@ author:
   bio              : "Science | AI | Engineering | Product"
   location         : #"Somewhere on earth"
   employer         : #"Red Brick University"
-  uri              : https://amolthakkar.com
+  uri              : # https://amolthakkar.com
   email            : "av.mol.th@gmail.com" 
 
   # Academic websites
