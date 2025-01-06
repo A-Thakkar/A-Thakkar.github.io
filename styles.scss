@@ -89,3 +89,11 @@
         color: $white;
     }
 }
+
+p a {
+    text-decoration: none;
+    background-color: #fed8b9;
+    &:hover {
+        text-decoration: none;
+      }
+}
