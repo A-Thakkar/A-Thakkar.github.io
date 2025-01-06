@@ -1,0 +1,19 @@
+---
+title: Blog
+subtitle: A collection of thoughts, resources, and things i find interesting that i'd like to share.
+listing:
+  - id: posts_2025
+    contents: "2025/**/index.qmd"
+    sort: "date desc"
+    categories: true
+html:
+  css: styles.scss
+page-layout: full
+include-back-link: false
+toc-location: right
+---
+
+## 2025
+
+:::{#posts_2025}
+:::

@@ -1,0 +1,29 @@
+---
+title: Curriculum vitae
+author: Amol Thakkar
+date: 12-01-2024
+published-title: CV last updated
+cv:
+  pdf: "Amol_Thakkar_2Page_CV_2024_12_01.pdf"
+  extended-pdf: "Amol_Thakkar_Extended_CV_2024_12_01.pdf"
+html:
+  css: styles.scss
+sidebar: false
+---
+
+```{=html}
+<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="{{< meta cv.pdf>}}" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
+  </a>
+</p>
+<!-- <p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="{{< meta cv.extended-pdf>}}" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download extended CV
+  </a>
+</p>
+-->
+<div class="embed-container">
+  <iframe class="pdf" src="{{< meta cv.pdf>}}"></iframe>
+</div>
+```

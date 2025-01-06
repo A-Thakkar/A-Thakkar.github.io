@@ -1,0 +1,23 @@
+---
+title: "Modelling uranyl chemistry in liquid ammonia from density functional theory"
+date: 2018-08-20
+categories:
+  - DFT
+  - Theoretical Chemistry
+  - Molecular Dynamics
+pub-info:
+  reference: >-
+    Sieffert, N., <strong>Thakkar, A.</strong>, and Bühl, M. (2018). Modelling uranyl chemistry in liquid ammonia from density functional theory. <em>Chemical Communications</em>, 54, 10431–10434. doi: <a href="https://doi.org/10.1039/C8CC05382K"><code>10.1039/C8CC05382K</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1039/C8CC05382K
+      icon: fa-solid fa-scroll
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=https://doi.org/10.1039/C8CC05382K
+      icon: ai ai-zotero
+doi: https://doi.org/10.1039/C8CC05382K
+draft: true
+---
+
+```bibtex
+```

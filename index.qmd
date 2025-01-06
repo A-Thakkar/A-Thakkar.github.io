@@ -1,0 +1,27 @@
+---
+title-block-banner: false
+image: "assets/images/Thakkar2.png"
+about:
+    template: marquee
+    image-shape: rectangle
+---
+
+Over the last 10 years I’ve worked on building AI-based solutions for [chemical synthesis](https://github.com/MolecularAI/aizynthfinder), [automatic activity recognition](https://research.ibm.com/projects/lab-that-learns), and [text2sql](https://research.ibm.com/projects/flowpilot).
+
+This has changed how [medicines](https://pubs.rsc.org/en/content/articlelanding/2024/md/d3md00651d) and [agrochemicals](https://shootsbysyngenta.com/success-story-ibm-and-syngenta) are made across large organisations.
+
+#### Now, I'm looking for a new adventure.
+
+If you’re in the early stages of working on a problem, and need a proactive partner willing to take on challenges acros building, management, and working with clients, [i'd love to chat](https://calendar.notion.so/meet/amolthakkar/tmnme4l0c).
+
+
+#### Currently
+Hitting reset, embracing my curiosity, and reinvigorating my inner child.
+
+- Cycled from Zurich to Istanbul
+- Learning Norwegian -- Exploring new ways to learn, teach, and build with AI
+- Advising a small business on digital strategy
+
+<!-- I'm passionate about building 
+
+Now, I’m looking to bring it all together and build on my experience to tackle the next problem. -->

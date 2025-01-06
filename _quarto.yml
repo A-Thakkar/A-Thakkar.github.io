@@ -1,0 +1,67 @@
+project:
+  type: website
+  output-dir: _site
+
+# Metadata stuff
+pagetitle: "Amol Thakkar"
+author-meta: "Amol Thakkar"
+
+website:
+  title: "Amol Thakkar"
+  site-url: https://www.amolthakkar.com
+  bread-crumbs: true
+  page-navigation: true
+  open-graph: true
+  favicon: "assets/images/favicon.png"
+
+  page-footer: 
+    left: |
+      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} Amol Thakkar</span><br>
+      <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}}{{< fa brands creative-commons-by >}}{{< fa brands creative-commons-nc >}}{{< fa brands creative-commons-sa >}}Creative Commons CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
+    right: |
+      <span class="faux-block">{{< fa brands orcid >}} <strong>ORCID</strong> [0000-0003-0403-4067](https://orcid.org/0000-0003-0403-4067)</span>
+  
+  reader-mode: true
+  google-analytics:  "G-S2VYQ84K5W"
+  
+  navbar:
+    pinned: true
+    search: true
+    background: primary
+    left:
+      - text: CV
+        href: cv/index.qmd
+      - text: Publications
+        href: publications/index.qmd
+      - text: Blog
+        href: blog/index.qmd
+
+    right:
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/amolthakkar/"
+      - icon: github
+        href: "https://github.com/a-thakkar"
+      - icon: twitter-x
+        href: "https://x.com/av_thakkar"
+      - text: "{{< fa brands bluesky>}}"
+        href: "https://bluesky.org/@amolthakkar.bsky.social"
+      - text: "{{< fa brands google-scholar>}}"
+        href: "https://scholar.google.com/citations?user=RXngb2IAAAAJ&hl=en"
+      - text: "{{< fa brands orcid>}}"
+        href: "https://orcid.org/0000-0003-0403-4067"
+      - icon: rss
+        href: index.xml
+      - icon: envelope
+        href: "https://mailhide.io/e/YN7koE6J"
+      
+
+format:
+  html:
+    theme:
+      light: [flatly.scss]
+    css: styles.scss
+    toc: true
+    link-external-newwindow: true
+
+execute:
+  freeze: auto
