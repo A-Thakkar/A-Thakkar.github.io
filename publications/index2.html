@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Amol Thakkar">
+
+<title>Amol Thakkar</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/images/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ffdc3f9023b5a077228bce60e5ae905a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-articles .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-conference-papers .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-conference-papers'] = new List('listing-conference-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S2VYQ84K5W"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-S2VYQ84K5W', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.scss">
+<meta property="og:title" content="Amol Thakkar">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="Amol Thakkar">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Amol Thakkar</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../cv/index.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications/index.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/amolthakkar/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/a-thakkar"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/av_thakkar"> <i class="bi bi-twitter-x" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://bluesky.org/@amolthakkar.bsky.social"> 
+<span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=RXngb2IAAAAJ&amp;hl=en"> 
+<span class="menu-text"><i class="fa-brands fa-google-scholar" aria-label="google-scholar"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0003-0403-4067"> 
+<span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mailhide.io/e/YN7koE6J"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Publications</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#articles" id="toc-articles" class="nav-link active" data-scroll-target="#articles">Articles</a></li>
+  </ul>
+</nav>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+
+<p>My research has focused on the digitisation of chemistry. Bridging the gap between the virtual and physical worlds, by integrating AI, cloud computing, robotics, and advanced computing technologies to accelerate scientific discovery.</p>
+<section id="articles" class="level2">
+<h2 class="anchored" data-anchor-id="articles">Articles</h2>
+<script>
+// JavaScript code here
+function convertBibtex(bibtex) {
+
+var author_name = "Thakkar, Amol"
+
+  // Parse the BibTeX input
+  var parser = new BibtexParser();
+  var entries = parser.parse(bibtex);
+console.log(entries)
+console.log(entries.length)
+  // Generate the ACS HTML output
+  var html = "";
+  for (var i = 0; i < entries.length; i++) {
+    console.log(i)
+    var entry = entries[i];
+    console.log(entry)
+    html += "<p><li>";
+    if (entry.hasOwnProperty("author")) {
+    var authors = entry.author.split(/(?<!\{) and |(?<!\{)&/);
+    var formattedAuthors = authors.map(function(author) {
+        return author.trim();
+    });
+    
+    for (var k = 0; k < formattedAuthors.length; k++) {
+        if (formattedAuthors[k] === author_name) {
+        html += "<b>" + formattedAuthors[k] + "</b>";
+        } else {
+        html += formattedAuthors[k];
+        }
+        
+        if (i < formattedAuthors.length - 1) {
+        html += "; ";
+        } else {
+        html += ". ";
+        }
+    }
+    }
+    
+    if (entry.hasOwnProperty("title")) {
+      html += entry.title + ". ";
+    }
+    if (entry.hasOwnProperty("journal")) {
+      html += "<i>" + entry.journal + "</i>, ";
+    }
+    if (entry.hasOwnProperty("year")) {
+      html += entry.year + ".";
+    }
+    if (entry.hasOwnProperty("doi")) {
+      html += "<br> doi: <a href='https://doi.org/" + entry.doi + "'>" + entry.doi + "</a>.";
+    }
+    html += "</li></p>";
+    console.log(html)
+  }
+    
+  return html;
+}
+
+function BibtexParser() {
+  this.parse = function(bibtex) {
+    var entries = [];
+    var lines = bibtex.split("\n");
+
+    var currentEntry = {};
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i].trim();
+      if (line.startsWith("@")) {
+        // New entry
+        if (Object.keys(currentEntry).length > 0) {
+          entries.push(currentEntry);
+          currentEntry = {};
+        }
+        var entryType = line.match(/@(\w+)/)[1].toLowerCase();
+        currentEntry["entryType"] = entryType;
+      } else if (line.startsWith("}")) {
+        // End of entry
+        entries.push(currentEntry);
+        currentEntry = {};
+      } else if (line.includes("=")) {
+        // Field
+        var field = line.match(/(\w+)\s*=\s*{([^}]*)}/);
+        if (field) {
+          var fieldName = field[1].toLowerCase();
+          var fieldValue = field[2];
+          currentEntry[fieldName] = fieldValue;
+        }
+      }
+    }
+
+    return entries;
+  };
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+      var bibtex = `
+@article{thakkar_datasets_2020,
+    title = {Datasets and their influence on the development of computer assisted synthesis planning tools in the pharmaceutical domain},
+    volume = {11},
+    url = {https://pubs.rsc.org/en/content/articlelanding/2020/sc/c9sc04944d},
+    doi = {https://doi.org/10.1039/C9SC04944D},
+    number = {1},
+    journal = {Chemical science},
+    author = {Thakkar, Amol and Kogej, Thierry and Reymond, Jean-Louis and Engkvist, Ola and Bjerrum, Esben Jannik},
+    year = {2020},
+    note = {Publisher: Royal Society of Chemistry},
+    pages = {154--168},
+}
+
+@inproceedings{thakkar_neural_2019,
+    title = {Neural Network Guided Tree-Search Policies for Synthesis Planning},
+    url = {https://link.springer.com/chapter/10.1007/978-3-030-30493-5_64},
+    doi = {https://doi.org/10.1007/978-3-030-30493-5_64},
+    booktitle = {International Conference on Artificial Neural Networks},
+    publisher = {Springer International Publishing Cham},
+    author = {Thakkar, Amol and Bjerrum, Esben Jannik and Engkvist, Ola and Reymond, Jean-Louis},
+    year = {2019},
+    pages = {721--724},
+}
+
+@article{sieffert_modelling_2018,
+    title = {Modelling uranyl chemistry in liquid ammonia from density functional theory},
+    volume = {54},
+    url = {https://pubs.rsc.org/en/content/articlelanding/2018/cc/c8cc05382k/unauth},
+    doi = {https://doi.org/10.1039/C8CC05382K},
+    number = {74},
+    journal = {Chemical Communications},
+    author = {Sieffert, Nicolas and Thakkar, Amol and Bühl, Michael},
+    year = {2018},
+    note = {Publisher: Royal Society of Chemistry},
+    pages = {10431--10434},
+}
+
+@article{thakkar_ring_2020,
+    title = {“Ring breaker”: neural network driven synthesis prediction of the ring system chemical space},
+    volume = {63},
+    url = {https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.9b01919},
+    doi = {https://doi.org/10.1021/acs.jmedchem.9b01919},
+    number = {16},
+    journal = {Journal of medicinal chemistry},
+    author = {Thakkar, Amol and Selmi, Nidhal and Reymond, Jean-Louis and Engkvist, Ola and Bjerrum, Esben Jannik},
+    year = {2020},
+    note = {Publisher: American Chemical Society},
+    pages = {8791--8808},
+}
+
+@article{bjerrum_artificial_2020,
+    title = {Artificial Applicability Labels for Improving Policies in Retrosynthesis Prediction},
+    volume = {2},
+    url = {https://iopscience.iop.org/article/10.1088/2632-2153/abcf90/meta},
+    doi = {10.1088/2632-2153/abcf90},
+    number = {1},
+    journal = {Machine Learning: Science and Technology},
+    author = {Bjerrum, Esben Jannik and Thakkar, Amol and Engkvist, Ola},
+    year = {2020},
+    note = {Publisher: Machine Learning: Science and Technology},
+}
+
+@article{genheden_aizynthfinder_2020,
+    title = {AiZynthFinder: a fast, robust and flexible open-source software for retrosynthetic planning},
+    volume = {12},
+    url = {https://link.springer.com/article/10.1186/s13321-020-00472-1},
+    doi = {https://doi.org/10.1186/s13321-020-00472-1},
+    number = {1},
+    journal = {Journal of cheminformatics},
+    author = {Genheden, Samuel and Thakkar, Amol and Chadimová, Veronika and Reymond, Jean-Louis and Engkvist, Ola and Bjerrum, Esben},
+    year = {2020},
+    note = {Publisher: Springer International Publishing Cham},
+    pages = {70},
+}
+
+@article{sumner_levenshtein_2020,
+    title = {Levenshtein augmentation improves performance of smiles based deep-learning synthesis prediction},
+    url = {https://chemrxiv.org/engage/chemrxiv/article-details/60c74d89702a9b293c18b884},
+    doi = {10.26434/chemrxiv.12562121.v2},
+    journal = {ChemRxiv},
+    author = {Sumner, Dean and He, Jiazhen and Thakkar, Amol and Engkvist, Ola and Bjerrum, Esben Jannik},
+    year = {2020},
+}
+
+@article{johansson_ai-assisted_2019,
+    title = {AI-assisted synthesis prediction},
+    volume = {32},
+    url = {https://www.sciencedirect.com/science/article/abs/pii/S1740674920300020},
+    doi = {https://doi.org/10.1016/j.ddtec.2020.06.002},
+    journal = {Drug Discovery Today: Technologies},
+    author = {Johansson, Simon and Thakkar, Amol and Kogej, Thierry and Bjerrum, Esben and Genheden, Samuel and Bastys, Tomas and Kannas, Christos and Schliep, Alexander and Chen, Hongming and Engkvist, Ola},
+    year = {2019},
+    note = {Publisher: Elsevier},
+    pages = {65--72},
+}
+
+@article{david_molecular_2020,
+    title = {Molecular representations in AI-driven drug discovery: a review and practical guide},
+    volume = {12},
+    url = {https://link.springer.com/article/10.1186/s13321-020-00460-5},
+    doi = {https://doi.org/10.1186/s13321-020-00460-5},
+    number = {1},
+    journal = {Journal of Cheminformatics},
+    author = {David, Laurianne and Thakkar, Amol and Mercado, Rocío and Engkvist, Ola},
+    year = {2020},
+    note = {Publisher: Springer International Publishing Cham},
+    pages = {56},
+}
+
+@article{thakkar_retrosynthetic_2021,
+    title = {Retrosynthetic accessibility score (RAscore)–rapid machine learned synthesizability classification from AI driven retrosynthetic planning},
+    volume = {12},
+    url = {https://pubs.rsc.org/en/content/articlelanding/2021/sc/d0sc05401a},
+    doi = {https://doi.org/10.1039/D0SC05401A},
+    number = {9},
+    journal = {Chemical science},
+    author = {Thakkar, Amol and Chadimová, Veronika and Bjerrum, Esben Jannik and Engkvist, Ola and Reymond, Jean-Louis},
+    year = {2021},
+    note = {Publisher: Royal Society of Chemistry},
+    pages = {3339--3349},
+}
+
+@article{thakkar_artificial_2021,
+    title = {Artificial intelligence and automation in computer aided synthesis planning},
+    volume = {6},
+    url = {https://pubs.rsc.org/en/content/articlelanding/2021/re/d0re00340a},
+    doi = {10.1039/D0RE00340A},
+    number = {1},
+    journal = {Reaction chemistry \& engineering},
+    author = {Thakkar, Amol and Johansson, Simon and Jorner, Kjell and Buttar, David and Reymond, Jean-Louis and Engkvist, Ola},
+    year = {2021},
+    note = {Publisher: Royal Society of Chemistry},
+    pages = {27--51},
+}
+
+@article{thakkar_how_2021,
+    title = {How AI for synthesis can help tackle challenges in molecular discovery: Medicinal chemistry and chemical biology highlights},
+    volume = {75},
+    url = {https://www.chimia.ch/chimia/article/view/2021_677},
+    doi = {https://doi.org/10.2533/chimia.2021.677},
+    number = {7-8},
+    journal = {Chimia},
+    author = {Thakkar, Amol and Schwaller, Philippe},
+    year = {2021},
+    pages = {677--677},
+}
+
+@phdthesis{thakkar_computer_nodate,
+    type = {PhD Thesis},
+    title = {Computer Aided Synthesis Prediction to Enable Augmented Chemical Discovery and Chemical Space Exploration},
+    url = {https://core.ac.uk/download/pdf/521342892.pdf},
+    school = {Universität Bern},
+    author = {Thakkar, Amol and Reymond, Jean-Louis},
+}
+
+@article{thakkar_automatic_2022,
+    title = {Automatic Extraction of Reaction Templates for Synthesis Prediction},
+    volume = {76},
+    url = {https://chimia.ch/chimia/article/view/2022_294},
+    doi = {https://doi.org/10.2533/chimia.2022.294},
+    number = {4},
+    journal = {Chimia},
+    author = {Thakkar, Amol and Reymond, Jean-Louis},
+    year = {2022},
+    pages = {294--297},
+}
+
+@inproceedings{thakkar_augmented_2022,
+    title = {Augmented disconnection aware retrosynthesis to facilitate user interaction},
+    url = {https://research.ibm.com/publications/augmented-disconnection-aware-retrosynthesis-to-facilitate-user-interaction},
+    booktitle = {American {Chemical} {Society} ({ACS}) {Fall} {Meeting}},
+    author = {Thakkar, Amol and Byekwaso, Andrea Antonia and Schwaller, Philippe and Vaucher, Alain and Toniato, Alessandra and Laino, Teodoro},
+    year = {2022},
+}
+
+@article{thakkar_unbiasing_2023,
+    title = {Unbiasing retrosynthesis language models with disconnection prompts},
+    volume = {9},
+    url = {https://pubs.acs.org/doi/full/10.1021/acscentsci.3c00372},
+    doi = {https://doi.org/10.1021/acscentsci.3c00372},
+    number = {7},
+    journal = {ACS Central Science},
+    author = {Thakkar, Amol and Vaucher, Alain C and Byekwaso, Andrea and Schwaller, Philippe and Toniato, Alessandra and Laino, Teodoro},
+    year = {2023},
+    note = {Publisher: American Chemical Society},
+    pages = {1488--1498},
+}
+
+@article{kannas_rxnutilscheminformatics_2022,
+    title = {Rxnutils–a cheminformatics python library for manipulating chemical reaction data},
+    url = {https://chemrxiv.org/engage/chemrxiv/article-details/62ff6e3d1945ad5634dee451},
+    doi = {10.26434/chemrxiv-2022-wt440-v2},
+    author = {Kannas, Christos and Thakkar, Amol and Bjerrum, Esben and Genheden, Samuel},
+    year = {2022},
+}
+
+@inproceedings{thakkar_disconnection_2022,
+    title = {Disconnection Aware Steering of Retrosynthesis Transformer to Facilitate Materials Design},
+    url = {https://research.ibm.com/publications/disconnection-aware-steering-of-retrosynthesis-transformer-to-facilitate-materials-design},
+    booktitle = {Materials Research Society (MRS) Fall Meeting},
+    author = {Thakkar, Amol and Byekwaso, Andrea Antonia and Vaucher, Alain and Schwaller, Philippe and Toniato, Alessandra and Laino, Teodoro},
+    year = {2022},
+}
+
+@article{cretu_standardization_2022,
+    title = {Standardization of chemical compounds using language modeling},
+    url = {https://chemrxiv.org/engage/chemrxiv/article-details/636927c0b58850fd35408fbc},
+    doi = {10.26434/chemrxiv-2022-14ztf},
+    author = {Cretu, Miruna T and Toniato, Alessandra and Vaucher, Alain C and Thakkar, Amol and Debabeche, Amin and Laino, Teodoro},
+    year = {2022},
+}
+
+@article{chakraborty_data-driven_2022,
+    title = {Data-driven Reaction Template Fingerprints},
+    url = {https://chemrxiv.org/engage/chemrxiv/article-details/637b92493551190cc33b635f},
+    doi = {10.26434/chemrxiv-2022-4kzp1},
+    journal = {ChemRxiv},
+    author = {Chakraborty, Anubhab and Thakkar, Amol and Vaucher, Alain C and Laino, Teodoro},
+    year = {2022},
+}
+
+@article{cretu_tools_2023,
+    title = {Tools for Synthesis Planning, Automation, and Analytical Data Analysis},
+    volume = {77},
+    url = {https://www.chimia.ch/chimia/article/view/2023_17},
+    doi = {https://doi.org/10.2533/chimia.2023.17},
+    number = {1/2},
+    journal = {Chimia},
+    author = {Cretu, Miruna and Alberts, Marvin and Chakraborty, Anubhab and Leonov, Artem and Thakkar, Amol and Laino, Teodoro},
+    year = {2023},
+    pages = {17--21},
+}
+
+@article{cretu_standardizing_2023,
+    title = {Standardizing chemical compounds with language models},
+    volume = {4},
+    url = {https://iopscience.iop.org/article/10.1088/2632-2153/ace878/meta},
+    doi = {10.1088/2632-2153/ace878},
+    number = {3},
+    journal = {Machine Learning: Science and Technology},
+    author = {Cretu, Miruna T and Toniato, Alessandra and Thakkar, Amol and Debabeche, Amin A and Laino, Teodoro and Vaucher, Alain C},
+    year = {2023},
+    note = {Publisher: IOP Publishing},
+    pages = {035014},
+}
+
+@inproceedings{thakkar_neute-neural_2023,
+    title = {NeuTE-Neural Template Extraction},
+    url = {https://research.ibm.com/publications/neute-neural-template-extraction},
+    booktitle = {American Chemical Society (ACS) Spring Meeting},
+    author = {Thakkar, Amol and Laino, Teodoro},
+    year = {2023},
+}
+
+@inproceedings{thakkar_creating_2023,
+    title = {Creating labs that learn through automated data management},
+    url = {https://research.ibm.com/publications/creating-labs-that-learn-through-automated-data-management},
+    booktitle = {American Chemical Society (ACS) Fall Meeting},
+    author = {Thakkar, Amol and Giovannini, Andrea and Manica, Matteo and Vaucher, Alain and Ruch, Patrick and Laino, Teodoro},
+    year = {2023},
+}
+
+@inproceedings{ruch_new_2023,
+    title = {A new era of collaborative experimentation enabled by multi-cloud and AI foundation models},
+    url = {https://research.ibm.com/publications/a-new-era-of-collaborative-experimentation-enabled-by-multi-cloud-and-ai-foundation-models},
+    booktitle = {Future Labs Live},
+    author = {Ruch, Patrick and Vaucher, Alain and Thakkar, Amol and Giovannini, Andrea and Foncubierta, Antonio and Christofidellis, Dimitrios and Zipoli, Federico and Born, Jannis and Cadow, Joris and Rapsomaniki, Marianna and {others}},
+    year = {2023},
+}
+
+@inproceedings{thakkar_using_2023,
+    title = {Using Foundation Models to Promote Digitization and Reproducibility in Scientific Experimentation},
+    url = {https://openreview.net/forum?id=A28gzFJd28},
+    booktitle = {NeurIPS 2023 AI for Science Workshop},
+    author = {Thakkar, Amol and Giovannini, Andrea and Foncubierta, Antonio and Baldassari, Carlo and Christofidellis, Dimitrios and Zipoli, Federico and Gabrieli, Gianmarco and Born, Jannis and Graziani, Mara and Alberts, Marvin and {others}},
+    year = {2023},
+}
+
+@article{thakkar_neural_2024,
+    title = {Neural Template Extraction-Learning the Language of ßSMIRKS},
+    url = {https://chemrxiv.org/engage/chemrxiv/article-details/664de6a821291e5d1df74ac0},
+    doi = {10.26434/chemrxiv-2024-bmk3w},
+    journal = {ChemRxiv},
+    author = {Thakkar, Amol and Laino, Teodoro},
+    year = {2024},
+}
+
+@inproceedings{ruch_multimodal_2024,
+    title = {Multimodal foundation models for more reproducible scientific experimentation and data capture},
+    url = {https://research.ibm.com/publications/multimodal-foundation-models-for-more-reproducible-scientific-experimentation-and-data-capture},
+    booktitle = {Future {Labs} {Live}},
+    author = {Ruch, Patrick and Gabrieli, Gianmarco and Morales, Irina Espejo and Christofidellis, Dimitrios and Graziani, Mara and Giovannini, Andrea and Zipoli, Federico and Thakkar, Amol and Foncubierta, Antonio and Manica, Matteo and {others}},
+    year = {2024},
+}
+
+@article{gabrieli_activity_2025,
+    title = {Activity recognition in scientific experimentation using multimodal visual encoding},
+    url = {http://dx.doi.org/10.1039/D4DD00287C},
+    doi = {10.1039/D4DD00287C},
+    abstract = {Capturing actions during scientific experimentation is a cornerstone of reproducibility and collaborative research. While large multimodal models hold promise for automatic action (or activity) recognition, their ability to provide real-time captioning of scientific actions remains to be explored. Leveraging multimodal egocentric videos and model finetuning for chemical experimentation, we study the action recognition performance of Vision Transformer (ViT) encoders coupled either to a multi-label classification head or a pretrained language model, as well as that of two state-of-the-art vision-language models, Video-LLaVA and X-CLIP. Highest fidelity was achieved for models coupled with trained classification heads or a fine-tuned language model decoder, for which individual actions were recognized with F1 scores between 0.29–0.57 and action sequences were transcribed at normalized Levenshtein ratios of 0.59–0.75, while inference efficiency was highest for models based on ViT encoders coupled to classifiers, yielding a 3-fold relative inference speed-up on GPU over language-assisted models. While models comprising generative language components were penalized in terms of inference time, we demonstrate that augmenting egocentric videos with gaze information increases the F1 score (0.52 → 0.61) and Levenshtein ratio (0.63 → 0.72, p = 0.047) for the language-assisted ViT encoder. Based on our evaluation of preferred model configurations, we propose the use of multimodal models for near real-time action recognition in scientific experimentation as viable approach for automatic documentation of laboratory work.},
+    journal = {Digital Discovery},
+    author = {Gabrieli, Gianmarco and Espejo Morales, Irina and Christofidellis, Dimitrios and Graziani, Mara and Giovannini, Andrea and Zipoli, Federico and Thakkar, Amol and Foncubierta, Antonio and Manica, Matteo and Ruch, Patrick W.},
+    year = {2025},
+    note = {Publisher: RSC},
+    pages = {--},
+}
+
+`;
+
+      document.getElementById("biblio").innerHTML = convertBibtex(bibtex);
+    });
+</script>
+<ol>
+<div id="biblio">
+
+</div>
+</ol>
+
+
+
+</section>
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-articles">
+<div class="publications project-list">
+<ul class="list">
+    
+</ul>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div><div class="quarto-listing quarto-listing-container-custom" id="listing-conference-papers">
+<div class="publications project-list">
+<ul class="list">
+    
+</ul>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/www\.amolthakkar\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2024–2025 Amol Thakkar</span><br> <span class="faux-block">All content licensed under<br><a href="https://creativecommons.org/licenses/by/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i><i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i><i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i>Creative Commons CC BY-NC-SA 4.0</a></span></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><span class="faux-block"><i class="fa-brands fa-orcid" aria-label="orcid"></i> <strong>ORCID</strong> <a href="https://orcid.org/0000-0003-0403-4067">0000-0003-0403-4067</a></span></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
