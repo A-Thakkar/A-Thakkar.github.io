@@ -54,7 +54,7 @@ console.log(entries.length)
       html += entry.title + ". ";
     }
     if (entry.hasOwnProperty("journal")) {
-      html += "<i>" + entry.journal + "</i>, ";
+      html += "<em>" + entry.journal + "</em>, ";
     }
     if (entry.hasOwnProperty("year")) {
       html += entry.year + ".";
