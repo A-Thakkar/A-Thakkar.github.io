@@ -33,8 +33,6 @@ website:
         href: cv/index.qmd
       - text: Publications
         href: publications/index.qmd
-      - text: Blog
-        href: blog/index.qmd
 
     right:
       - icon: linkedin
