@@ -5,7 +5,7 @@ date: 12-01-2024
 published-title: CV last updated
 cv:
   pdf: "Amol_Thakkar_2Page_CV_2024_12_01.pdf"
-  extended-pdf: "Amol_Thakkar_Extended_CV_2024_12_01.pdf"
+  extended-pdf: "Amol_Thakkar_Extended_CV_2025_02_01.pdf"
 html:
   css: styles.scss
 sidebar: false
