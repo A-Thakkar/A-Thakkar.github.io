@@ -17,6 +17,6 @@ sidebar: false
   </a>
 </p>
 <div class="embed-container">
-  <iframe class="pdf" src="{{< meta cv.pdf>}}"></iframe>
+  <embed class="pdf" type="application/pdf" src="{{< meta cv.pdf>}}"></iframe>
 </div>
 ```
