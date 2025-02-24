@@ -1,7 +1,7 @@
 ---
 title: Curriculum vitae
 author: Amol Thakkar
-date: 12-01-2024
+date: 24-02-2024
 published-title: CV last updated
 cv:
   pdf: "Amol_Thakkar_Extended_CV_2025_02_01.pdf"
