@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.amolthakkar.com/scripts/OrcidToBib.html</loc>
-    <lastmod>2025-03-19T20:14:11.230Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.amolthakkar.com/cv/index.html</loc>
-    <lastmod>2025-03-19T20:14:11.217Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.amolthakkar.com/publications/index.html</loc>
-    <lastmod>2025-03-19T20:14:11.230Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.amolthakkar.com/publications/index2.html</loc>
-    <lastmod>2025-03-19T20:14:11.230Z</lastmod>
+    <lastmod>2025-05-23T13:32:32.821Z</lastmod>
   </url>
   <url>
     <loc>https://www.amolthakkar.com/index.html</loc>
-    <lastmod>2025-03-19T20:14:11.229Z</lastmod>
+    <lastmod>2025-05-23T13:32:32.820Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/cv/index.html</loc>
+    <lastmod>2025-05-23T13:32:32.808Z</lastmod>
   </url>
   <url>
     <loc>https://www.amolthakkar.com/blog/index.html</loc>
-    <lastmod>2025-03-19T20:14:11.216Z</lastmod>
+    <lastmod>2025-05-23T13:32:32.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/scripts/OrcidToBib.html</loc>
+    <lastmod>2025-05-23T13:32:32.821Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/publications/index.html</loc>
+    <lastmod>2025-05-23T13:32:32.821Z</lastmod>
   </url>
 </urlset>
