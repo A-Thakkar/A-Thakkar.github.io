@@ -1,15 +1,12 @@
-[tool.poetry]
+[project]
 name = "amol-thakkar-personal-site"
 version = "0.1.0"
 description = ""
-authors = ["Amol Thakkar"]
-readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.12"
-jupyter = "^1.1.1"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+authors = [
+    {name = "Amol Thakkar"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "requests>=2.31.0",
+]

@@ -39,16 +39,10 @@ website:
         href: "https://www.linkedin.com/in/amolthakkar/"
       - icon: github
         href: "https://github.com/a-thakkar"
-      - icon: twitter-x
-        href: "https://x.com/av_thakkar"
-      - text: "{{< fa brands bluesky>}}"
-        href: "https://bluesky.org/@amolthakkar.bsky.social"
       - text: "{{< fa brands google-scholar>}}"
         href: "https://scholar.google.com/citations?user=RXngb2IAAAAJ&hl=en"
       - text: "{{< fa brands orcid>}}"
         href: "https://orcid.org/0000-0003-0403-4067"
-      - icon: rss
-        href: index.xml
       - icon: envelope
         href: "https://mailhide.io/e/YN7koE6J"
       
@@ -63,6 +57,8 @@ format:
 
 execute:
   freeze: auto
+  # Python environment: Quarto will automatically use .venv if it exists
+  # To set up the environment, run: uv sync
 
 resources: 
   - "CNAME"
