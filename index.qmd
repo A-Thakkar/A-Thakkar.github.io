@@ -1,14 +1,36 @@
 ---
 title-block-banner: false
-image: "assets/images/Thakkar2.png"
+image: "assets/images/profile.png"
 about:
-    template: marquee
-    image-shape: rectangle
+    template: solana
+    image-shape: rounded
+toc: false
 ---
 
-Over the last 10 years I’ve worked on building [ML-based solutions for chemical synthesis](https://github.com/MolecularAI/aizynthfinder), [systems for automatic activity recognition](https://research.ibm.com/projects/lab-that-learns), and [LLM's for text2sql](https://research.ibm.com/projects/flowpilot).
+# Hi, I’m Amol.
 
-This has changed how [medicines](https://pubs.rsc.org/en/content/articlelanding/2024/md/d3md00651d) and [agrochemicals](https://shootsbysyngenta.com/success-story-ibm-and-syngenta) are made across large organisations.
+I am a **Research-to-Product Technologist** working at the intersection of AI, product, and real-world deployment. I specialize in taking advanced research from the lab and turning it into scalable, production-grade systems.
 
-# Experience and Interests
-My experience spans the full development lifecycle - from lab-based research to the design, deployment, and productionisation of AI tools for both early-stage discovery and scale-up. I'm particularly interested in translating research into the real world, especially via commercial entities, whether industry or start-ups. I plan on writing some thoughts on the matter so check back for a link later.
+Currently, I’m an **Applied AI Scientist at the [Ellison Institute of Technology (EIT), Oxford](https://www.eit.org/)**. My career has been defined by a "bench-to-bits" trajectory. Starting in physical lab science and evolving into software engineering and AI research at institutions like **IBM Research**, **AstraZeneca**, and **Pfizer**.
+
+### What I Build
+I thrive in high-growth, ambiguous environments where technical and product decisions are tightly coupled. Over the past decade, I have focused on building AI that survives contact with reality:
+
+* **ML-Driven Organic Synthesis:** Delivered [AiZynthFinder](https://github.com/MolecularAI/aizynthfinder), an open-source platform that influenced [how medicines are made at AstraZeneca](https://pubs.rsc.org/en/content/articlelanding/2024/md/d3md00651d), and [IBM RXN](https://github.com/rxn4chemistry) which impacted [how agrochemicals are developed at Syngenta](https://shootsbysyngenta.com/success-story-ibm-and-syngenta).
+* **Applied LLMs:** Developed and trained [LLMs for text-to-SQL](https://research.ibm.com/projects/flowpilot) to bridge the gap between natural language and complex data architectures.
+* **Computer Vision & IoT:** Built [automatic activity recognition](https://research.ibm.com/projects/lab-that-learns) systems to digitize real-world laboratory and operational workflows.
+
+### My Approach
+My strength lies in **translation**. I bridge the gap between research, engineering, and user needs. I have led small teams, driven internal initiatives, and owned client-facing engagements across pharmaceuticals, chemicals, and finance. 
+
+I’m most engaged when I can own the full lifecycle. From the first line of research code to the design, deployment, and productionisation of a system. 
+
+**I am interested in roles and collaborations where building, scaling, and high-velocity impact matter.**
+
+### Beyond the Lab
+When I’m not building systems, I’m usually pushing my physical limits in the mountains or the water. My background in endurance and alpine sports includes:
+
+* **Cycling & Swimming:** Cycled solo from **Zurich to Istanbul**, completed a **Half Ironman**, and finished a **10km marathon swim**.
+* **Alpinism:** Active in **ski touring, mountaineering, and climbing**, including several alpine summits (not as much anymore, South East England is pretty flat)
+
+I find that the discipline and risk management required for these pursuits mirror the persistence and focus needed to solve high-stakes technical problems.
