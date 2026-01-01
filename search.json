@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "Curriculum vitae",
+    "section": "",
+    "text": "Download current CV"
+  },
+  {
     "objectID": "publications/index2.html",
     "href": "publications/index2.html",
     "title": "Publications",
@@ -14,18 +21,18 @@
     "text": "Articles"
   },
   {
+    "objectID": "scripts/OrcidToBib.html",
+    "href": "scripts/OrcidToBib.html",
+    "title": "Amol Thakkar",
+    "section": "",
+    "text": "orcid = '0000-0003-0403-406' # Fill your orcid here\n\n\nimport requests\n\nWe use the /works api to list all works related to the orcid. This gives a summary of all works, so citation information is not included. We collect the put-code of all works to retrieve the citation information later.\n\nresponse = requests.get('https://pub.orcid.org/v3.0/{}/works'.format(orcid),\n                        headers={\"Accept\": \"application/orcid+json\" })\nrecord = response.json()\n\n\nrecord\n\n{'response-code': 404,\n 'developer-message': '404 Not Found: The resource was not found.',\n 'user-message': 'The resource was not found.',\n 'error-code': 9016,\n 'more-info': 'https://members.orcid.org/api/resources/troubleshooting'}\n\n\n\nput_codes = []\nfor work in record['group']:\n    put_code = work['work-summary'][0]['put-code']\n    put_codes.append(put_code)\nput_code = put_codes[0]\n\n\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\nCell In[4], line 2\n      1 put_codes = []\n----&gt; 2 for work in record['group']:\n      3     put_code = work['work-summary'][0]['put-code']\n      4     put_codes.append(put_code)\n\nKeyError: 'group'\n\n\n\nWe use the /&lt;orcid&gt;/work/&lt;put-code&gt; endpoint to retrieve the citation information for each record.\n\ncitations = []\nfor put_code in put_codes:\n    response = requests.get('https://pub.orcid.org/v3.0/{}/work/{}'.format(orcid, put_code),\n                            headers={\"Accept\": \"application/orcid+json\" })\n    work = response.json()\n    if work['citation'] is not None:\n        citations.append(work['citation']['citation-value'])\n\n\nwith open('output.bib', 'w') as bibfile:\n    for citation in citations:\n        bibfile.write(citation)\n        bibfile.write('\\n')"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Experience and Interests",
     "section": "",
     "text": "Over the last 10 years I’ve worked on building ML-based solutions for chemical synthesis, systems for automatic activity recognition, and LLM’s for text2sql.\nThis has changed how medicines and agrochemicals are made across large organisations.\n\nExperience and Interests\nMy experience spans the full development lifecycle - from lab-based research to the design, deployment, and productionisation of AI tools for both early-stage discovery and scale-up. I’m particularly interested in translating research into the real world, especially via commercial entities, whether industry or start-ups. I plan on writing some thoughts on the matter so check back for a link later."
-  },
-  {
-    "objectID": "cv/index.html",
-    "href": "cv/index.html",
-    "title": "Curriculum vitae",
-    "section": "",
-    "text": "Download current CV"
   },
   {
     "objectID": "blog/index.html",
@@ -40,13 +47,6 @@
     "title": "Blog",
     "section": "",
     "text": "No matching items"
-  },
-  {
-    "objectID": "scripts/OrcidToBib.html",
-    "href": "scripts/OrcidToBib.html",
-    "title": "Amol Thakkar",
-    "section": "",
-    "text": "orcid = '0000-0003-0403-406' # Fill your orcid here\n\n\nimport requests\n\nWe use the /works api to list all works related to the orcid. This gives a summary of all works, so citation information is not included. We collect the put-code of all works to retrieve the citation information later.\n\nresponse = requests.get('https://pub.orcid.org/v3.0/{}/works'.format(orcid),\n                        headers={\"Accept\": \"application/orcid+json\" })\nrecord = response.json()\n\n\nrecord\n\n{'response-code': 404,\n 'developer-message': '404 Not Found: The resource was not found.',\n 'user-message': 'The resource was not found.',\n 'error-code': 9016,\n 'more-info': 'https://members.orcid.org/api/resources/troubleshooting'}\n\n\n\nput_codes = []\nfor work in record['group']:\n    put_code = work['work-summary'][0]['put-code']\n    put_codes.append(put_code)\nput_code = put_codes[0]\n\n\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\nCell In[4], line 2\n      1 put_codes = []\n----&gt; 2 for work in record['group']:\n      3     put_code = work['work-summary'][0]['put-code']\n      4     put_codes.append(put_code)\n\nKeyError: 'group'\n\n\n\nWe use the /&lt;orcid&gt;/work/&lt;put-code&gt; endpoint to retrieve the citation information for each record.\n\ncitations = []\nfor put_code in put_codes:\n    response = requests.get('https://pub.orcid.org/v3.0/{}/work/{}'.format(orcid, put_code),\n                            headers={\"Accept\": \"application/orcid+json\" })\n    work = response.json()\n    if work['citation'] is not None:\n        citations.append(work['citation']['citation-value'])\n\n\nwith open('output.bib', 'w') as bibfile:\n    for citation in citations:\n        bibfile.write(citation)\n        bibfile.write('\\n')"
   },
   {
     "objectID": "publications/index.html",
