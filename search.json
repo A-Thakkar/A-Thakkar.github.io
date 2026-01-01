@@ -4,7 +4,7 @@
     "href": "cv/index.html",
     "title": "Curriculum vitae",
     "section": "",
-    "text": "Download current CV"
+    "text": "```{=html}\n\n&lt;a class=“btn btn-primary btn-lg cv-download” href=“Amol_Thakkar_Extended_CV_2026_01_online.pdf” target=“_blank”&gt;  Download current CV \n\n&lt;!–\n\n&lt;embed class=“pdf” type=“application/pdf” src=”"
   },
   {
     "objectID": "publications/index2.html",
