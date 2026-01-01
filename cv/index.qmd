@@ -15,7 +15,3 @@ sidebar: false
     <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
   </a>
 </p>
-
-<div class="embed-container">
-  <iframe class="pdf" src="Amol_Thakkar_Extended_CV_2026_01_online.pdf" type="application/pdf"></iframe>
-</div>
