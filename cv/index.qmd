@@ -16,7 +16,8 @@ sidebar: false
     <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
   </a>
 </p>
+<!--
 <div class="embed-container">
   <embed class="pdf" type="application/pdf" src="{{< meta cv.pdf>}}"></iframe>
-</div>
+</div> -->
 ```
