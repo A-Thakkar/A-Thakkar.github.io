@@ -10,15 +10,14 @@ html:
 sidebar: false
 ---
 
-```{=html}
 <p class="text-center">
-  <a class="btn btn-primary btn-lg cv-download" href="{{< meta cv.pdf>}}" target="_blank">
+  <a class="btn btn-primary btn-lg cv-download" href="Amol_Thakkar_Extended_CV_2026_01_online.pdf" target="_blank">
     <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
   </a>
 </p>
+
 <!--
 <div class="embed-container">
-  <embed class="pdf" type="application/pdf" src="{{< meta cv.pdf> }}">
+  <embed class="pdf" type="application/pdf" src="Amol_Thakkar_Extended_CV_2026_01_online.pdf">
 </div>
 -->
-```
