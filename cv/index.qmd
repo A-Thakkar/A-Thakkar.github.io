@@ -16,8 +16,6 @@ sidebar: false
   </a>
 </p>
 
-<!--
 <div class="embed-container">
-  <embed class="pdf" type="application/pdf" src="Amol_Thakkar_Extended_CV_2026_01_online.pdf">
+  <iframe class="pdf" src="Amol_Thakkar_Extended_CV_2026_01_online.pdf" type="application/pdf"></iframe>
 </div>
--->
