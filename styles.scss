@@ -90,10 +90,13 @@
     }
 }
 
-p a {
+// Links: no background by default, highlight on hover only
+a {
     text-decoration: none;
-    background-color: #fed8b9;
+    background-color: transparent;
+    
     &:hover {
+        background-color: #fed8b9;
         text-decoration: none;
-      }
+    }
 }
