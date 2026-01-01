@@ -1,17 +1,17 @@
 .embed-container {
     position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
-    min-height: 80vh;
-    margin: 2em 0;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
 .embed-container .pdf {
     width: 100%;
-    min-height: 80vh;
-    height: 80vh;
+    height: 100%;
     border: none;
   }
 
