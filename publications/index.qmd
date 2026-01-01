@@ -9,6 +9,12 @@ toc-location: right
 
 My research has focused on the digitisation of chemistry. Bridging the gap between the virtual and physical worlds, by integrating AI, cloud computing, robotics, and advanced computing technologies to accelerate scientific discovery.
 
+<a href="https://scholar.google.com/citations?user=RXngb2IAAAAJ&hl=en" target="_blank" class="btn scholar-btn" style="display: inline-flex; align-items: center; gap: 0.4em; text-decoration: none; background: #4285F4; color: white; padding: 0.45em 1em; border-radius: 4px; font-weight: 500; font-size: 1em; white-space: nowrap;">
+  <span style="font-size:1.2em; display: flex; align-items: center; margin-right: 0.4em;">{{< fa brands google-scholar >}}</span>
+  <span>Google Scholar</span>
+</a>
+
+
 ## Articles
 
 <script>

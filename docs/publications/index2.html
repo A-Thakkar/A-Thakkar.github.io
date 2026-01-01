@@ -81,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-project','listing-pagetitle','listing-author-meta','listing-website','listing-format','listing-execute','listing-resources','listing-_quarto-vars','listing-language','listing-title-block-banner','listing-title','listing-date','listing-categories','listing-pub-info','listing-doi','listing-draft','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-project","listing-pagetitle","listing-author-meta","listing-website","listing-format","listing-execute","listing-resources","listing-_quarto-vars","listing-language","listing-title-block-banner","listing-title","listing-date","listing-categories","listing-pub-info","listing-doi","listing-draft","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -196,7 +196,7 @@ window.Quarto = {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../publications/index.html"> 
+    <a class="nav-link active" href="../publications/index2.html" aria-current="page"> 
 <span class="menu-text">Publications</span></a>
   </li>  
 </ul>
@@ -264,7 +264,7 @@ window.Quarto = {
   <li><a href="#articles" id="toc-articles" class="nav-link active" data-scroll-target="#articles">Articles</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="REZU">DFT <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TW9sZWN1bGFyJTIwRHluYW1pY3M=">Molecular Dynamics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGhlb3JldGljYWwlMjBDaGVtaXN0cnk=">Theoretical Chemistry <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -704,6 +704,54 @@ window.addEventListener('DOMContentLoaded', function() {
 <div class="publications project-list">
 <ul class="list">
     
+        <li class="project" data-index="0" data-categories="REZUJTJDVGhlb3JldGljYWwlMjBDaGVtaXN0cnklMkNNb2xlY3VsYXIlMjBEeW5hbWljcw==" data-listing-date-sort="1534716000000" data-listing-file-modified-sort="1736179897251" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+            <div class="project-content listing-pub-info">
+                <p>Sieffert, N., <strong>Thakkar, A.</strong>, and Bühl, M. (2018). Modelling uranyl chemistry in liquid ammonia from density functional theory. <em>Chemical Communications</em>, 54, 10431–10434. doi: <a href="https://doi.org/10.1039/C8CC05382K"><code>10.1039/C8CC05382K</code></a></p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=DFT">
+                            DFT
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Theoretical Chemistry">
+                            Theoretical Chemistry
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Molecular Dynamics">
+                            Molecular Dynamics
+                        </a></div>
+                    
+            </div>
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://doi.org/10.1039/C8CC05382K">
+                        
+                            <i class="fa-solid fa-scroll"></i> Final version
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://www.zotero.org/save?type=doi&amp;q=https://doi.org/10.1039/C8CC05382K">
+                        
+                            <i class="ai ai-zotero"></i> Add to Zotero
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
 </ul>
 </div>
 <div class="listing-no-matching d-none">
