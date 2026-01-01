@@ -4,6 +4,7 @@ image: "assets/images/profile.png"
 about:
     template: solana
     image-shape: rounded
+toc: false
 ---
 
 # Hi, I’m Amol.
@@ -29,7 +30,7 @@ I’m most engaged when I can own the full lifecycle. From the first line of res
 ### Beyond the Lab
 When I’m not building systems, I’m usually pushing my physical limits in the mountains or the water. My background in endurance and alpine sports includes:
 
-* **Cycling & Swimming:** Cycled from **Zurich to Istanbul**, completed a **Half Ironman**, and finished a **10km marathon swim**.
+* **Cycling & Swimming:** Cycled solo from **Zurich to Istanbul**, completed a **Half Ironman**, and finished a **10km marathon swim**.
 * **Alpinism:** Active in **ski touring, mountaineering, and climbing**, including several alpine summits (not as much anymore, South East England is pretty flat)
 
 I find that the discipline and risk management required for these pursuits mirror the persistence and focus needed to solve high-stakes technical problems.
