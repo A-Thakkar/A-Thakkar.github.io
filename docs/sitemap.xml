@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.amolthakkar.com/cv/index.html</loc>
-    <lastmod>2026-01-01T21:42:20.978Z</lastmod>
+    <lastmod>2026-01-01T22:30:26.729Z</lastmod>
   </url>
   <url>
     <loc>https://www.amolthakkar.com/blog/index.html</loc>
@@ -23,5 +23,69 @@
   <url>
     <loc>https://www.amolthakkar.com/scripts/OrcidToBib.html</loc>
     <lastmod>2026-01-01T13:44:27.190Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/projects/flowpilot.html</loc>
+    <lastmod>2026-01-01T22:59:50.511Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/projects/ringbreaker.html</loc>
+    <lastmod>2026-01-01T23:06:08.279Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/projects/ltl.html</loc>
+    <lastmod>2026-01-01T23:04:37.424Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/projects/index.html</loc>
+    <lastmod>2026-01-01T23:01:21.916Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/projects/gdbroutebrowser.html</loc>
+    <lastmod>2026-01-01T23:03:06.013Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/projects/rascore.html</loc>
+    <lastmod>2026-01-01T23:05:25.753Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/projects/aiyznthfinder.html</loc>
+    <lastmod>2026-01-02T10:08:32.097Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/projects/rxn.html</loc>
+    <lastmod>2026-01-01T23:04:11.487Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/case-studies/rxn.html</loc>
+    <lastmod>2026-01-01T23:04:11.487Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/case-studies/aiyznthfinder.html</loc>
+    <lastmod>2026-01-02T10:08:32.097Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/case-studies/rascore.html</loc>
+    <lastmod>2026-01-01T23:05:25.753Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/case-studies/gdbroutebrowser.html</loc>
+    <lastmod>2026-01-01T23:03:06.013Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/case-studies/index.html</loc>
+    <lastmod>2026-01-01T23:01:21.916Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/case-studies/ltl.html</loc>
+    <lastmod>2026-01-01T23:04:37.424Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/case-studies/ringbreaker.html</loc>
+    <lastmod>2026-01-01T23:06:08.279Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.amolthakkar.com/case-studies/flowpilot.html</loc>
+    <lastmod>2026-01-01T22:59:50.511Z</lastmod>
   </url>
 </urlset>

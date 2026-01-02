@@ -9,7 +9,7 @@ toc: false
 
 # Hi, I’m Amol.
 
-I am a **Research-to-Product Technologist** working at the intersection of AI, product, and real-world deployment. I specialize in taking advanced research from the lab and turning it into scalable, production-grade systems.
+I build end-to-end systems that turn bold scientific ideas into deployed, real-world impact. My leverage comes from combining deep technical understanding with execution under uncertainty.
 
 Currently, I’m an **Applied AI Scientist at the [Ellison Institute of Technology (EIT), Oxford](https://www.eit.org/)**. My career has been defined by a "bench-to-bits" trajectory. Starting in physical lab science and evolving into software engineering and AI research at institutions like **IBM Research**, **AstraZeneca**, and **Pfizer**.
 

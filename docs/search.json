@@ -61,5 +61,418 @@
     "title": "Amol Thakkar",
     "section": "",
     "text": "orcid = '0000-0003-0403-406' # Fill your orcid here\n\n\nimport requests\n\nWe use the /works api to list all works related to the orcid. This gives a summary of all works, so citation information is not included. We collect the put-code of all works to retrieve the citation information later.\n\nresponse = requests.get('https://pub.orcid.org/v3.0/{}/works'.format(orcid),\n                        headers={\"Accept\": \"application/orcid+json\" })\nrecord = response.json()\n\n\nrecord\n\n{'response-code': 404,\n 'developer-message': '404 Not Found: The resource was not found.',\n 'user-message': 'The resource was not found.',\n 'error-code': 9016,\n 'more-info': 'https://members.orcid.org/api/resources/troubleshooting'}\n\n\n\nput_codes = []\nfor work in record['group']:\n    put_code = work['work-summary'][0]['put-code']\n    put_codes.append(put_code)\nput_code = put_codes[0]\n\n\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\nCell In[4], line 2\n      1 put_codes = []\n----&gt; 2 for work in record['group']:\n      3     put_code = work['work-summary'][0]['put-code']\n      4     put_codes.append(put_code)\n\nKeyError: 'group'\n\n\n\nWe use the /&lt;orcid&gt;/work/&lt;put-code&gt; endpoint to retrieve the citation information for each record.\n\ncitations = []\nfor put_code in put_codes:\n    response = requests.get('https://pub.orcid.org/v3.0/{}/work/{}'.format(orcid, put_code),\n                            headers={\"Accept\": \"application/orcid+json\" })\n    work = response.json()\n    if work['citation'] is not None:\n        citations.append(work['citation']['citation-value'])\n\n\nwith open('output.bib', 'w') as bibfile:\n    for citation in citations:\n        bibfile.write(citation)\n        bibfile.write('\\n')"
+  },
+  {
+    "objectID": "projects/flowpilot.html",
+    "href": "projects/flowpilot.html",
+    "title": "Flowpilot",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/flowpilot.html#overview",
+    "href": "projects/flowpilot.html#overview",
+    "title": "Flowpilot",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/flowpilot.html#key-results",
+    "href": "projects/flowpilot.html#key-results",
+    "title": "Flowpilot",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "projects/ringbreaker.html",
+    "href": "projects/ringbreaker.html",
+    "title": "RingBreaker",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/ringbreaker.html#overview",
+    "href": "projects/ringbreaker.html#overview",
+    "title": "RingBreaker",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/ringbreaker.html#key-results",
+    "href": "projects/ringbreaker.html#key-results",
+    "title": "RingBreaker",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "projects/ltl.html",
+    "href": "projects/ltl.html",
+    "title": "Lab that Learns",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/ltl.html#overview",
+    "href": "projects/ltl.html#overview",
+    "title": "Lab that Learns",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/ltl.html#key-results",
+    "href": "projects/ltl.html#key-results",
+    "title": "Lab that Learns",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "AI for MedChem\n\n\nAI assisted neurotransmitter discovery\n\n\n\n\n\n\n\n\n\n\n\n\nLab that Learns\n\n\nMulti-modal AI and IOT for activity tracking\n\n\n\n\n\n\n\n\n\n\n\n\nRAScore\n\n\nOracle for chemical synthesisability\n\n\n\n\n\n\n\n\n\n\n\n\nRingBreaker\n\n\nSupporting chemists with sythesis strategies.\n\n\n\n\n\n\n\n\n\n\n\n\nCase Study: Automating Chemical Synthesis\n\n\nAn open-source toolkit for chemical synthesis planning.\n\n\n\n\n\n\n\n\n\n\n\n\nFlowpilot\n\n\nAn LLM-powered system for enterprise data integration\n\n\n\n\n\n\n\n\n\n\n\n\nRXN4Chemistry\n\n\nTools for Chemical Reaction Prediction and Retrosynthesis\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/gdbroutebrowser.html",
+    "href": "projects/gdbroutebrowser.html",
+    "title": "AI for MedChem",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/gdbroutebrowser.html#overview",
+    "href": "projects/gdbroutebrowser.html#overview",
+    "title": "AI for MedChem",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/gdbroutebrowser.html#key-results",
+    "href": "projects/gdbroutebrowser.html#key-results",
+    "title": "AI for MedChem",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "projects/rascore.html",
+    "href": "projects/rascore.html",
+    "title": "RAScore",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/rascore.html#overview",
+    "href": "projects/rascore.html#overview",
+    "title": "RAScore",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/rascore.html#key-results",
+    "href": "projects/rascore.html#key-results",
+    "title": "RAScore",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "projects/aiyznthfinder.html",
+    "href": "projects/aiyznthfinder.html",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "",
+    "text": "Chemical synthesis remains one of the most knowledge-intensive and execution-constrained processes in science. Despite major advances in computational chemistry and machine learning, synthesis planning and execution are still dominated by manual reasoning, brittle procedures, and poorly captured experimental knowledge.\nMy work has focused on automating chemical synthesis end-to-end — from reasoning about how molecules can be made, to building systems that connect planning, execution, and learning in real laboratory environments. This case study traces that work across academic research, open tooling, and deployed industrial systems."
+  },
+  {
+    "objectID": "projects/aiyznthfinder.html#overview",
+    "href": "projects/aiyznthfinder.html#overview",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "",
+    "text": "Chemical synthesis remains one of the most knowledge-intensive and execution-constrained processes in science. Despite major advances in computational chemistry and machine learning, synthesis planning and execution are still dominated by manual reasoning, brittle procedures, and poorly captured experimental knowledge.\nMy work has focused on automating chemical synthesis end-to-end — from reasoning about how molecules can be made, to building systems that connect planning, execution, and learning in real laboratory environments. This case study traces that work across academic research, open tooling, and deployed industrial systems."
+  },
+  {
+    "objectID": "projects/aiyznthfinder.html#key-results",
+    "href": "projects/aiyznthfinder.html#key-results",
+    "title": "Project A",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "projects/rxn.html",
+    "href": "projects/rxn.html",
+    "title": "RXN4Chemistry",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/rxn.html#overview",
+    "href": "projects/rxn.html#overview",
+    "title": "RXN4Chemistry",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "projects/rxn.html#key-results",
+    "href": "projects/rxn.html#key-results",
+    "title": "RXN4Chemistry",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "projects/aiyznthfinder.html#the-problem",
+    "href": "projects/aiyznthfinder.html#the-problem",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "The Problem",
+    "text": "The Problem\nSynthesis planning does not scale.\nAcross both academic and industrial settings, the same limitations recur:\n\nSynthetic routes are evaluated heuristically, not systematically\n\nExperimental knowledge is fragmented across notebooks, instruments, and individuals\n\nFailed experiments are rarely captured in a way that enables learning\n\nTranslating research ideas into reliable, repeatable systems is slow\n\nAs a result, synthesis remains difficult to reproduce, hard to optimize, and resistant to automation."
+  },
+  {
+    "objectID": "projects/aiyznthfinder.html#origins-from-bench-chemistry-to-systems-thinking",
+    "href": "projects/aiyznthfinder.html#origins-from-bench-chemistry-to-systems-thinking",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Origins: From Bench Chemistry to Systems Thinking",
+    "text": "Origins: From Bench Chemistry to Systems Thinking\nMy initial training was in experimental and computational chemistry. Across projects in synthesis, catalysis, enzymology, and electronic structure theory, I repeatedly encountered the same friction points: slow iteration cycles, sensitivity to poorly documented conditions, and limited transferability of synthetic knowledge.\nRepresentative prior work included:\n\nMulti-step synthesis of complex heterocycles\n\nCatalytic studies of iron-doped zeolites for alkane dehydrogenation\n\nConversion of renewable feedstocks into unnatural amino acids and cyclopeptides\n\nDiastereoselective reductive amination via rhodium-catalyzed transfer hydrogenation\n\nDensity functional theory studies of reactive inorganic systems\n\nInvestigation of enzymatic chemical transformations\n\nThese experiences motivated a shift away from optimizing individual reactions toward building systems that could reason about synthesis at scale."
+  },
+  {
+    "objectID": "projects/aiyznthfinder.html#research-foundations-aizynthfinder",
+    "href": "projects/aiyznthfinder.html#research-foundations-aizynthfinder",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Research Foundations: AiZynthFinder",
+    "text": "Research Foundations: AiZynthFinder\nThis motivation led to work on AiZynthFinder, an open-source retrosynthesis planning framework designed to make synthesis planning more systematic, interpretable, and accessible.\nKey contributions included:\n\nReaction Dataset Analysis\nSystematic analysis of public reaction datasets to identify structural biases, coverage gaps, and failure modes that impact model behavior and evaluation.\n\n\nRingBreaker\nTargeted retrosynthetic capabilities for ring-forming reactions, addressing transformations that generic template-based methods struggled to recover.\n\n\nRAScore\nA learned feasibility score to rapidly prioritize synthesizable routes early in the search process, improving both efficiency and relevance.\n\n\nInteractive Synthesis Exploration\nBrowser-based tools that enabled chemists to explore retrosynthetic space interactively, lowering the barrier between algorithmic planning and human intuition.\nOutcome:\nAiZynthFinder became widely adopted in academic research and served as a foundation for subsequent work on scalable synthesis planning."
+  },
+  {
+    "objectID": "projects/aiyznthfinder.html#from-research-to-product-ibm-rxn",
+    "href": "projects/aiyznthfinder.html#from-research-to-product-ibm-rxn",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "From Research to Product: IBM RXN",
+    "text": "From Research to Product: IBM RXN\nAt IBM, this work progressed from research prototypes to production-grade systems supporting real users and workflows.\nKey areas of contribution included:\n\nDisconnection-Aware Retrosynthesis\nImproved alignment between algorithmic planning and chemist reasoning by explicitly modeling disconnection strategies.\n\n\nNLP for Template Extraction\nApplied natural language processing to automate reaction template extraction, reducing reliance on manual curation.\n\n\nTemplate Fingerprints\nDeveloped compact representations for reaction rules, enabling similarity search and clustering over large template libraries.\n\n\nNLP-Driven Data Curation\nUsed language models to improve the structure, consistency, and usability of reaction data, supporting reproducibility and downstream learning.\nOutcome:\nThese efforts supported the deployment of retrosynthesis capabilities in IBM RXN, bridging the gap between academic methods and usable industrial tools."
+  },
+  {
+    "objectID": "projects/aiyznthfinder.html#toward-closed-loop-systems-the-lab-that-learns",
+    "href": "projects/aiyznthfinder.html#toward-closed-loop-systems-the-lab-that-learns",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Toward Closed-Loop Systems: The Lab That Learns",
+    "text": "Toward Closed-Loop Systems: The Lab That Learns\nAs synthesis planning systems matured, a fundamental limitation became clear: planning alone does not enable learning from execution.\nAt IBM Research, this motivated work toward the Lab That Learns — an initiative focused on connecting design, execution, and data capture into closed-loop experimental systems.\nRather than relying on manual documentation, the Lab That Learns explores the use of multimodal foundation models to automatically capture and structure experimental workflows using video, audio, text, and instrument signals. This enables:\n\nAutomated documentation of experimental procedures\n\nStructured, queryable experimental records\n\nAnalysis of execution patterns across experiments\n\nLearning from both successful and failed runs\n\nIn this context, retrosynthesis planning becomes one component of a broader system that learns from real laboratory execution, rather than a standalone prediction tool.\nMore details on the project are available from IBM Research:\nhttps://research.ibm.com/projects/lab-that-learns"
+  },
+  {
+    "objectID": "projects/aiyznthfinder.html#unifying-theme-formalizing-synthesis-for-execution",
+    "href": "projects/aiyznthfinder.html#unifying-theme-formalizing-synthesis-for-execution",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Unifying Theme: Formalizing Synthesis for Execution",
+    "text": "Unifying Theme: Formalizing Synthesis for Execution\nAcross research tools, production systems, and laboratory automation, the underlying challenge has remained consistent:\n\nSynthesis knowledge is implicit, fragmented, and difficult to operationalize.\n\nThis work focused on making that knowledge explicit — through representations, planning algorithms, human-in-the-loop interfaces, and execution-aware systems — in order to support reproducibility, scalability, and continuous improvement."
+  },
+  {
+    "objectID": "projects/aiyznthfinder.html#impact",
+    "href": "projects/aiyznthfinder.html#impact",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Impact",
+    "text": "Impact\n\nPeer-reviewed publications in retrosynthesis and computational chemistry\n\nOpen-source tools adopted by academic researchers\n\nDeployed retrosynthesis systems used in industrial settings\n\nContributions to closed-loop laboratory research initiatives\n\nLinks to publications, code, products, and press are provided separately."
+  },
+  {
+    "objectID": "projects/aiyznthfinder.html#why-this-matters",
+    "href": "projects/aiyznthfinder.html#why-this-matters",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Why This Matters",
+    "text": "Why This Matters\nAutomating chemical synthesis is not just a modeling challenge. It requires systems that connect reasoning, execution, and learning in the physical world.\nThis work demonstrates how ideas can progress from theoretical insight to open tools, deployed products, and experimental learning systems — with synthesis planning as a central, enabling component."
+  },
+  {
+    "objectID": "case-studies/rxn.html",
+    "href": "case-studies/rxn.html",
+    "title": "RXN4Chemistry",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/rxn.html#overview",
+    "href": "case-studies/rxn.html#overview",
+    "title": "RXN4Chemistry",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/rxn.html#key-results",
+    "href": "case-studies/rxn.html#key-results",
+    "title": "RXN4Chemistry",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "case-studies/aiyznthfinder.html",
+    "href": "case-studies/aiyznthfinder.html",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "",
+    "text": "Chemical synthesis remains one of the most knowledge-intensive and execution-constrained processes in science. Despite major advances in computational chemistry and machine learning, synthesis planning and execution are still dominated by manual reasoning, brittle procedures, and poorly captured experimental knowledge.\nMy work has focused on automating chemical synthesis end-to-end — from reasoning about how molecules can be made, to building systems that connect planning, execution, and learning in real laboratory environments. This case study traces that work across academic research, open tooling, and deployed industrial systems."
+  },
+  {
+    "objectID": "case-studies/aiyznthfinder.html#overview",
+    "href": "case-studies/aiyznthfinder.html#overview",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "",
+    "text": "Chemical synthesis remains one of the most knowledge-intensive and execution-constrained processes in science. Despite major advances in computational chemistry and machine learning, synthesis planning and execution are still dominated by manual reasoning, brittle procedures, and poorly captured experimental knowledge.\nMy work has focused on automating chemical synthesis end-to-end — from reasoning about how molecules can be made, to building systems that connect planning, execution, and learning in real laboratory environments. This case study traces that work across academic research, open tooling, and deployed industrial systems."
+  },
+  {
+    "objectID": "case-studies/aiyznthfinder.html#the-problem",
+    "href": "case-studies/aiyznthfinder.html#the-problem",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "The Problem",
+    "text": "The Problem\nSynthesis planning does not scale.\nAcross both academic and industrial settings, the same limitations recur:\n\nSynthetic routes are evaluated heuristically, not systematically\n\nExperimental knowledge is fragmented across notebooks, instruments, and individuals\n\nFailed experiments are rarely captured in a way that enables learning\n\nTranslating research ideas into reliable, repeatable systems is slow\n\nAs a result, synthesis remains difficult to reproduce, hard to optimize, and resistant to automation."
+  },
+  {
+    "objectID": "case-studies/aiyznthfinder.html#origins-from-bench-chemistry-to-systems-thinking",
+    "href": "case-studies/aiyznthfinder.html#origins-from-bench-chemistry-to-systems-thinking",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Origins: From Bench Chemistry to Systems Thinking",
+    "text": "Origins: From Bench Chemistry to Systems Thinking\nMy initial training was in experimental and computational chemistry. Across projects in synthesis, catalysis, enzymology, and electronic structure theory, I repeatedly encountered the same friction points: slow iteration cycles, sensitivity to poorly documented conditions, and limited transferability of synthetic knowledge.\nRepresentative prior work included:\n\nMulti-step synthesis of complex heterocycles\n\nCatalytic studies of iron-doped zeolites for alkane dehydrogenation\n\nConversion of renewable feedstocks into unnatural amino acids and cyclopeptides\n\nDiastereoselective reductive amination via rhodium-catalyzed transfer hydrogenation\n\nDensity functional theory studies of reactive inorganic systems\n\nInvestigation of enzymatic chemical transformations\n\nThese experiences motivated a shift away from optimizing individual reactions toward building systems that could reason about synthesis at scale."
+  },
+  {
+    "objectID": "case-studies/aiyznthfinder.html#research-foundations-aizynthfinder",
+    "href": "case-studies/aiyznthfinder.html#research-foundations-aizynthfinder",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Research Foundations: AiZynthFinder",
+    "text": "Research Foundations: AiZynthFinder\nThis motivation led to work on AiZynthFinder, an open-source retrosynthesis planning framework designed to make synthesis planning more systematic, interpretable, and accessible.\nKey contributions included:\n\nReaction Dataset Analysis\nSystematic analysis of public reaction datasets to identify structural biases, coverage gaps, and failure modes that impact model behavior and evaluation.\n\n\nRingBreaker\nTargeted retrosynthetic capabilities for ring-forming reactions, addressing transformations that generic template-based methods struggled to recover.\n\n\nRAScore\nA learned feasibility score to rapidly prioritize synthesizable routes early in the search process, improving both efficiency and relevance.\n\n\nInteractive Synthesis Exploration\nBrowser-based tools that enabled chemists to explore retrosynthetic space interactively, lowering the barrier between algorithmic planning and human intuition.\nOutcome:\nAiZynthFinder became widely adopted in academic research and served as a foundation for subsequent work on scalable synthesis planning."
+  },
+  {
+    "objectID": "case-studies/aiyznthfinder.html#from-research-to-product-ibm-rxn",
+    "href": "case-studies/aiyznthfinder.html#from-research-to-product-ibm-rxn",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "From Research to Product: IBM RXN",
+    "text": "From Research to Product: IBM RXN\nAt IBM, this work progressed from research prototypes to production-grade systems supporting real users and workflows.\nKey areas of contribution included:\n\nDisconnection-Aware Retrosynthesis\nImproved alignment between algorithmic planning and chemist reasoning by explicitly modeling disconnection strategies.\n\n\nNLP for Template Extraction\nApplied natural language processing to automate reaction template extraction, reducing reliance on manual curation.\n\n\nTemplate Fingerprints\nDeveloped compact representations for reaction rules, enabling similarity search and clustering over large template libraries.\n\n\nNLP-Driven Data Curation\nUsed language models to improve the structure, consistency, and usability of reaction data, supporting reproducibility and downstream learning.\nOutcome:\nThese efforts supported the deployment of retrosynthesis capabilities in IBM RXN, bridging the gap between academic methods and usable industrial tools."
+  },
+  {
+    "objectID": "case-studies/aiyznthfinder.html#toward-closed-loop-systems-the-lab-that-learns",
+    "href": "case-studies/aiyznthfinder.html#toward-closed-loop-systems-the-lab-that-learns",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Toward Closed-Loop Systems: The Lab That Learns",
+    "text": "Toward Closed-Loop Systems: The Lab That Learns\nAs synthesis planning systems matured, a fundamental limitation became clear: planning alone does not enable learning from execution.\nAt IBM Research, this motivated work toward the Lab That Learns — an initiative focused on connecting design, execution, and data capture into closed-loop experimental systems.\nRather than relying on manual documentation, the Lab That Learns explores the use of multimodal foundation models to automatically capture and structure experimental workflows using video, audio, text, and instrument signals. This enables:\n\nAutomated documentation of experimental procedures\n\nStructured, queryable experimental records\n\nAnalysis of execution patterns across experiments\n\nLearning from both successful and failed runs\n\nIn this context, retrosynthesis planning becomes one component of a broader system that learns from real laboratory execution, rather than a standalone prediction tool.\nMore details on the project are available from IBM Research:\nhttps://research.ibm.com/projects/lab-that-learns"
+  },
+  {
+    "objectID": "case-studies/aiyznthfinder.html#unifying-theme-formalizing-synthesis-for-execution",
+    "href": "case-studies/aiyznthfinder.html#unifying-theme-formalizing-synthesis-for-execution",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Unifying Theme: Formalizing Synthesis for Execution",
+    "text": "Unifying Theme: Formalizing Synthesis for Execution\nAcross research tools, production systems, and laboratory automation, the underlying challenge has remained consistent:\n\nSynthesis knowledge is implicit, fragmented, and difficult to operationalize.\n\nThis work focused on making that knowledge explicit — through representations, planning algorithms, human-in-the-loop interfaces, and execution-aware systems — in order to support reproducibility, scalability, and continuous improvement."
+  },
+  {
+    "objectID": "case-studies/aiyznthfinder.html#impact",
+    "href": "case-studies/aiyznthfinder.html#impact",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Impact",
+    "text": "Impact\n\nPeer-reviewed publications in retrosynthesis and computational chemistry\n\nOpen-source tools adopted by academic researchers\n\nDeployed retrosynthesis systems used in industrial settings\n\nContributions to closed-loop laboratory research initiatives\n\nLinks to publications, code, products, and press are provided separately."
+  },
+  {
+    "objectID": "case-studies/aiyznthfinder.html#why-this-matters",
+    "href": "case-studies/aiyznthfinder.html#why-this-matters",
+    "title": "Case Study: Automating Chemical Synthesis",
+    "section": "Why This Matters",
+    "text": "Why This Matters\nAutomating chemical synthesis is not just a modeling challenge. It requires systems that connect reasoning, execution, and learning in the physical world.\nThis work demonstrates how ideas can progress from theoretical insight to open tools, deployed products, and experimental learning systems — with synthesis planning as a central, enabling component."
+  },
+  {
+    "objectID": "case-studies/rascore.html",
+    "href": "case-studies/rascore.html",
+    "title": "RAScore",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/rascore.html#overview",
+    "href": "case-studies/rascore.html#overview",
+    "title": "RAScore",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/rascore.html#key-results",
+    "href": "case-studies/rascore.html#key-results",
+    "title": "RAScore",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "case-studies/gdbroutebrowser.html",
+    "href": "case-studies/gdbroutebrowser.html",
+    "title": "AI for MedChem",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/gdbroutebrowser.html#overview",
+    "href": "case-studies/gdbroutebrowser.html#overview",
+    "title": "AI for MedChem",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/gdbroutebrowser.html#key-results",
+    "href": "case-studies/gdbroutebrowser.html#key-results",
+    "title": "AI for MedChem",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "case-studies/index.html",
+    "href": "case-studies/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "AI for MedChem\n\n\nAI assisted neurotransmitter discovery\n\n\n\n\n\n\n\n\n\n\n\n\nLab that Learns\n\n\nMulti-modal AI and IOT for activity tracking\n\n\n\n\n\n\n\n\n\n\n\n\nRAScore\n\n\nOracle for chemical synthesisability\n\n\n\n\n\n\n\n\n\n\n\n\nRingBreaker\n\n\nSupporting chemists with sythesis strategies.\n\n\n\n\n\n\n\n\n\n\n\n\nCase Study: Automating Chemical Synthesis\n\n\nAn open-source toolkit for chemical synthesis planning.\n\n\n\n\n\n\n\n\n\n\n\n\nFlowpilot\n\n\nAn LLM-powered system for enterprise data integration\n\n\n\n\n\n\n\n\n\n\n\n\nRXN4Chemistry\n\n\nTools for Chemical Reaction Prediction and Retrosynthesis\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "case-studies/ltl.html",
+    "href": "case-studies/ltl.html",
+    "title": "Lab that Learns",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/ltl.html#overview",
+    "href": "case-studies/ltl.html#overview",
+    "title": "Lab that Learns",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/ltl.html#key-results",
+    "href": "case-studies/ltl.html#key-results",
+    "title": "Lab that Learns",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "case-studies/ringbreaker.html",
+    "href": "case-studies/ringbreaker.html",
+    "title": "RingBreaker",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/ringbreaker.html#overview",
+    "href": "case-studies/ringbreaker.html#overview",
+    "title": "RingBreaker",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/ringbreaker.html#key-results",
+    "href": "case-studies/ringbreaker.html#key-results",
+    "title": "RingBreaker",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
+  },
+  {
+    "objectID": "case-studies/flowpilot.html",
+    "href": "case-studies/flowpilot.html",
+    "title": "Flowpilot",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/flowpilot.html#overview",
+    "href": "case-studies/flowpilot.html#overview",
+    "title": "Flowpilot",
+    "section": "",
+    "text": "Here you write the full details of the project.\n\nProblem statement\nMethods\nResults\nLinks to GitHub / paper / demo"
+  },
+  {
+    "objectID": "case-studies/flowpilot.html#key-results",
+    "href": "case-studies/flowpilot.html#key-results",
+    "title": "Flowpilot",
+    "section": "Key Results",
+    "text": "Key Results\nMore text, figures, code, etc."
   }
 ]

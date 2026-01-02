@@ -33,6 +33,8 @@ website:
         href: cv/index.qmd
       - text: Publications
         href: publications/index.qmd
+      - text: Case Studies
+        href: case-studies/index.qmd
 
     right:
       - icon: linkedin

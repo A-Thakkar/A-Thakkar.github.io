@@ -8,5 +8,29 @@
     "items": [
       "/publications/articles/uranyl-chemistry-liquid-ammonia/index.html"
     ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/gdbroutebrowser.html",
+      "/projects/ltl.html",
+      "/projects/rascore.html",
+      "/projects/ringbreaker.html",
+      "/projects/aiyznthfinder.html",
+      "/projects/flowpilot.html",
+      "/projects/rxn.html"
+    ]
+  },
+  {
+    "listing": "/case-studies/index.html",
+    "items": [
+      "/case-studies/gdbroutebrowser.html",
+      "/case-studies/ltl.html",
+      "/case-studies/rascore.html",
+      "/case-studies/ringbreaker.html",
+      "/case-studies/aiyznthfinder.html",
+      "/case-studies/flowpilot.html",
+      "/case-studies/rxn.html"
+    ]
   }
 ]

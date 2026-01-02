@@ -204,3 +204,124 @@ main.content {
         padding-bottom: 140px !important; // More space on mobile if footer is taller
     }
 }
+
+/* Simple elegant card grid */
+.quarto-listing .list.grid {
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  
+  @media screen and (max-width: 768px) {
+    gap: 1rem;
+  }
+}
+
+/* Clean card design */
+.quarto-listing .quarto-grid-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Subtle hover effect */
+.quarto-listing .quarto-grid-link:hover .quarto-grid-item {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* Make entire card clickable */
+.quarto-listing .quarto-grid-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  
+  &:hover {
+    color: inherit;
+  }
+}
+
+/* Simple image container */
+.quarto-listing .quarto-grid-item .card-img-top {
+  overflow: hidden;
+  padding: 0;
+}
+
+.quarto-listing .quarto-grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  
+  @media screen and (max-width: 768px) {
+    height: 160px;
+  }
+}
+
+/* Clean title style */
+.quarto-listing .quarto-grid-item .card-title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  padding: 1rem 1rem 0.5rem 1rem;
+  color: inherit;
+  
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    padding: 0.875rem 0.875rem 0.4rem 0.875rem;
+  }
+}
+
+/* Simple description style */
+.quarto-listing .quarto-grid-item .card-text {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 0 1rem 1rem 1rem;
+  margin: 0;
+  flex: 1;
+  
+  p {
+    margin: 0;
+    color: inherit;
+  }
+  
+  @media screen and (max-width: 768px) {
+    font-size: 0.875rem;
+    padding: 0 0.875rem 0.875rem 0.875rem;
+  }
+}
+
+/* Card body */
+.quarto-listing .quarto-grid-item .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Responsive grid */
+@media screen and (max-width: 992px) {
+  .quarto-listing .list.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quarto-listing .list.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .quarto-listing .list.grid {
+    grid-template-columns: 1fr;
+  }
+}
+  
